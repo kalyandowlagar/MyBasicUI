@@ -6,62 +6,55 @@
     <title>My Basic UI</title>
     <style>
         {
-  box-sizing: border-box;
-}
-
-.column {
-  float: right;
-  width: 33.33%;
-  padding: 10px;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-.button {
-  background-color: #e7e7e7;
-  border: none;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-.button1{background-color: #555555;}
+        box-sizing: border-box;
+        }
+        .column {
+        float: left;
+        width: 32%;
+        padding: 5px;
+        }
+        .row::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+        .button {
+        background-color: #555555;
+        border: 4px solid #C0C0C0;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        }
     </style>
 </head>
-<body >
-<div style="background-color:black;">
+<body style="background-color:black;border-style:groove;">
+<div >
     <div class="row">
-        <div class="column">
-            <img src="..\images\motogp.png" alt="logo" width="300" height="500">
+        <div class ="column" >
+            <img src="..\images\gpmoto.jpg" alt="logo" width="500" height="600" >
         </div>
-        <div class="column" >
+        <div class="column" style="align:center;"  >
             <h1 style= "font-style:italic;color:white;font-size:50px;"><center>The Racing zone</center></h1>
-            <p style= "font-style:italic;color:white;font-size:20px;padding:10px;">Welcome! To the world of Super Bikes.</p>
-            <div class="row">
-                <div class="column">
-                    <a><button class="button">New User! Sign Up </button></a>
-                </div>
-                <div class="column">
-                    <b><button class="button button1">Sign in @ Here</button></b>
-                </div>
-            </div>
+            <hr style="width:100%;text-align:center;margin-left:0">
+            <p style= "font-style:italic;color:white;font-size:20px;padding:50px;">Welcome! To the world of Super Bikes.</p><br>
+            <\t><\t>
+            <button class="button">New User! Sign Up </button>
+            <button class="button">Sign in @ Here</button>
         </div>
-        <div class="column">
-            <img src="..\images\shadowbike.jpeg" alt="logo" width="300" height="500">
+        <div class ="column" >
+            <img src="..\images\motogp.png" alt="logo" width="500" height="600" >
         </div>
     </div>
 </div>
 
-<div style="background-color:grey;">
-    <h1 style="text-align:right;font-size:15px;">©. Copyrights By Kalyan Dowlagar  </h1>
+<div style="background-color:grey;vertical-align:bottom;">
+    <h1 style="font-style:italic;text-align:Center;font-size:20px;">©. Copyrights By Kalyan Dowlagar  </h1>
 </div>
+
 </body>
 </html>
