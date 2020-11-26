@@ -1,17 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="mystyle.css">
     <meta charset="UTF-8">
     <title>My Basic UI</title>
+    <style>
+        {
+  box-sizing: border-box;
+}
+
+.column {
+  float: right;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+    </style>
 </head>
-<body>
-<h1>Hello World</h1>
+<body >
+<div style="background-color:black;">
+    <div class="row">
+        <div class="column">
+            <img src="..\images\motogp.png" alt="logo" width="300" height="500">
+        </div>
+        <div class="column" >
+            <h1 style= "font-style:italic;color:white;font-size:50px;"><center>The Racing zone</center></h1>
+            <p style= "font-style:italic;color:white;font-size:20px;padding:10px;">Welcome! To the world of Super Bikes.</p>
+        </div>
+    </div>
+</div>
 
-<p1>Welcome to Github</p1>
-
-<ul>
-    <li> hey you first trail to push the code to git repo</li>
-</ul>
-
+<div style="background-color:grey;">
+    <h1 style="text-align:right;font-size:15px;">©. Copyrighted By Kalyan Dowlagar  </h1>
+</div>
 </body>
 </html>
