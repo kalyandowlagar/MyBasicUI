@@ -1,35 +1,39 @@
 import mysql.connector
-from mysql.connector import Error
+global connection
 
-try:
-    connection = mysql.connector.connect(host='127.0.0.1',
-                                         database='motogp',
+connection = mysql.connector.connect(host='localhost',
+                                         database='motogpracers',
                                          user='root',
                                          password='mysqlpwd@1')
-    if connection.is_connected():
-        db_Info = connection.get_server_info()
-        print("Connected to MySQL Server version ", db_Info)
-        cursor = connection.cursor()
-        cursor.execute("select database();")
-        record = cursor.fetchone()
-        print("You're connected to database: ", record)
 
-except Error as e:
-    print("Error while connecting to MySQL", e)
-finally:
-    if (connection.is_connected()):
-        cursor.close()
-        connection.close()
-        print("MySQL connection is closed")
+#mycursor = connection.cursor()
+
+#mycursor.execute("SELECT firstname FROM motogp")
+
+#myresult = mycursor.fetchall()
+
 
 i = True
+flag ="N"
 def displayMenu():
-    global i, firstname
+    global i, username
     while i:
-        firstname = input("First Name: ")
-        lastname = input("last Name: ")
+        username = input("First Name: ")
+        mycursor = connection.cursor()
+
+        mycursor.execute("SELECT firstname FROM motogp")
+
+        myresult = mycursor.fetchall()
+        for x in myresult:
+            if (username == x()):
+                flag="Y"
+        if (flag == "N"):
+            lastname = input("last Name: ")
+        else:
+            print("User already exist ")
         i = False
     print(f"Hello {firstname} {lastname}! welcome")
+
 
 
 displayMenu()
