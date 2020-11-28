@@ -1,4 +1,7 @@
-.navbar{
-background-color=#50C7C7
-color=grey
+.navbar-light{
+background-color:#50C7C7
+color:grey
+}
+.navbar + a {
+text-color:grey
 }
