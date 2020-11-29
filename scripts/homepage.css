@@ -1,29 +1,29 @@
-.body{
+
+.body-bg{
 background-color:black;
-border-style:groove;
 }
-.navbar {
-background-color:#50C7C7;
-font-style:italic;
-font-text-color:white;
-font-size:25px;
+
+.btn-outline-success {
+  color: #C7B550;
 }
-#bodyh1{
-font-style:italic;
-color:white;
-font-size:50px;
+.btn-outline-success-box{
+border: solid 2px #faf7d7;
 }
-#htline{
-width:100%;
-text-align:center;
-margin-left:0
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: #C7B550;
+  border: solid 2px #faf7d7;
+  border-radius:0.25em;
 }
-#bodyp{
-font-style:italic;
-color:white;
-font-size:20px;
-padding:50px;
+
+.btn-outline-success:focus {
+  box-shadow: 0 0 0 0.2rem rgba(199, 181, 80, 0.5);
 }
+
+.navbar-nav + li {
+color:#C7B550;
+}
+
 .column {
 float: left;
 width: 32%;
@@ -34,17 +34,8 @@ content: "";
 clear: both;
 display: table;
 }
-.button {
-background-color: #555555;
-border: 4px solid #C0C0C0;
-color: white;
-padding: 15px 32px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 16px;
-margin: 4px 2px;
-cursor: pointer;
+.column + #fn{
+colour:#C7B550
 }
 .fotter{
 background-color:grey;
