@@ -1,7 +1,57 @@
-.navbar-light{
-background-color:#50C7C7
-color:grey
+.body{
+background-color:black;
+border-style:groove;
 }
-.navbar + a {
-text-color:grey
+.navbar {
+background-color:#50C7C7;
+font-style:italic;
+font-text-color:white;
+font-size:25px;
+}
+#bodyh1{
+font-style:italic;
+color:white;
+font-size:50px;
+}
+#htline{
+width:100%;
+text-align:center;
+margin-left:0
+}
+#bodyp{
+font-style:italic;
+color:white;
+font-size:20px;
+padding:50px;
+}
+.column {
+float: left;
+width: 32%;
+padding: 5px;
+}
+.row::after {
+content: "";
+clear: both;
+display: table;
+}
+.button {
+background-color: #555555;
+border: 4px solid #C0C0C0;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
+.fotter{
+background-color:grey;
+vertical-align:bottom;
+}
+#fothead{
+font-style:italic;
+text-align:Center;
+font-size:20px;
 }
