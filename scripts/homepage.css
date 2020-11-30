@@ -5,6 +5,7 @@ background-color:black;
 
 .btn-outline-success {
   color: #C7B550;
+  border-radius:50%;
 }
 .btn-outline-success-box{
 border: solid 2px #faf7d7;
@@ -13,17 +14,25 @@ border: solid 2px #faf7d7;
   color: #fff;
   background-color: #C7B550;
   border: solid 2px #faf7d7;
-  border-radius:0.25em;
+  border-radius:50%;
 }
 
 .btn-outline-success:focus {
   box-shadow: 0 0 0 0.2rem rgba(199, 181, 80, 0.5);
 }
-
+.circle{
+padding: 0;
+border: 5px solid #faf7d7;
+border-radius: 50%;
+max-width: 100%;
+height: auto;
+}
 .navbar-nav + li {
 color:#C7B550;
 }
-
+.nav-item{
+padding: 1px 20px 20px 1px;
+}
 .column {
 float: left;
 width: 32%;
